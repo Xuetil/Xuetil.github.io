@@ -1,0 +1,346 @@
+/*entire webpage font*/
+body{
+    font-family: Arial;
+}
+
+/*the background image for the banner*/
+.banner{
+    background-image: url("detail_banner.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    width:100%;
+    background-size: cover;
+}
+
+/*individual icon position*/
+.icon{
+    position:relative;
+    width:25px;
+    height:auto;
+}
+
+/*icon+texts*/
+.tab{
+    display:inline-block;
+    text-align:center;
+    font-size: 10px;
+    float: right;
+    width:5%;
+    margin-top: 10px;
+}
+
+.iconGroup{
+    overflow: auto;
+}
+
+/*navigation tabs*/
+nav{
+    overflow: auto;
+    margin-top:120px;
+    margin-right:25px;
+    padding: 10px;
+}
+nav ol{
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 0;
+}
+
+nav li{
+    font-size: 21pt;
+    font-family: Times;
+    font-weight: bold;
+    color:#494544;
+    text-align:center;
+    vertical-align: bottom;
+    display: inline-block;
+    float:right;
+    width: 18%;
+    height: 100px;
+    position:relative;
+}
+
+nav li div{
+    position:absolute;
+    bottom:0;
+}
+
+/*lower content background*/
+.lowercontent{
+    background-color: rgba(230,207,181,0.5);
+    padding:25px;
+}
+
+.row{
+    /*height: 450px;*/
+}
+
+/*first row*/
+.basicInfo {
+    overflow: auto;
+}
+
+.additional {
+    margin-top: 50px;
+    margin-left: 7%;
+}
+
+.name{
+    font-size: 25px;
+    font-weight: bold;
+    color:rgb(81,64,58);
+    text-align: center;
+}
+
+.productPic{
+    width:35%;
+    float:left;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+/*arrows of pic. on the sides*/
+.picAlign{
+    overflow: auto;
+}
+
+/*arrows*/
+.picAlign div{
+    display: inline-block;
+    float: left;
+}
+
+/*individual arrow*/
+.arrow{
+    /*height: 100px;*/
+    width:10%;
+    height:100%;
+    padding-top: 150px;
+    /*background-color: red;*/
+}
+
+/*product photo*/
+.photo{
+    width:80%;
+    text-align: center;
+    /*background-color: blue;*/
+    padding-top: 15px;
+}
+
+/*adjust the photo size and border*/
+.photo img{
+    border: 5px solid rgba(255,255,255,0.85);
+    width:80%;
+}
+
+/*the mini pics below the product photo*/
+.minis{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.productInfo{
+    width:30%;
+    float:left;
+    padding-top: 70px;
+    padding-left: 80px;
+}
+
+/*color squares for color selections*/
+.square1{
+    height:22px;
+    width:22px;
+    background-color:rgb(248,225,135);
+    border:2px solid rgb(151,151,151);
+    display:inline-block;
+}
+.square2{
+    height:22px;
+    width:22px;
+    background-color:rgb(156,216,94);
+    border:2px solid rgb(151,151,151);
+    display:inline-block;
+}
+.square3{
+    height:22px;
+    width:22px;
+    background-color:rgb(245,162,162);
+    border:2px solid rgb(151,151,151);
+    display:inline-block;
+}
+.square4{
+    height:22px;
+    width:22px;
+    background-color:rgb(179,168,230);
+    border:2px solid rgb(151,151,151);
+    display:inline-block;
+}
+
+/*adjustment of quantity pic. */
+.qty{
+    display:block;
+    width:40px;
+    padding-top: 8px;
+}
+
+/*adjust the entire quantity div*/
+.quantity{
+    padding-top: 17px;
+}
+
+.addCart{
+    width:20%;
+    float:left;
+    font-size: 25px;
+    color:rgb(255,255,255);
+    font-weight: 300;
+    background-color: rgb(104,80,71);
+    height:50px;
+    line-height:50px;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-left: 50px;
+    margin-top: 280px;
+}
+
+.addCart p{
+    margin-block-start:0;
+    margin-block-end:0;
+}
+
+/*for getting rid of the gaps between two inline boxes: "Product Details"&"Review"*/
+.addText{
+    font-size:0px;
+}
+
+.proDetailsText{
+    font-size:25px;
+    display:inline-block;
+    background-image: url("backgroundPD.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    width:17%;
+    height:60px;
+    line-height: 60px;
+    text-align:center;
+    margin-right:0;
+    padding-right:0;
+    background-size: cover;
+}
+.reviewText{
+    font-size:25px;
+    display:inline-block;
+    width:17%;
+    background:rgb(246,247,248);
+    height:60px;
+    line-height: 60px;
+    text-align:center;
+    margin-right:auto;
+    margin-left:0;
+    padding-left:0;
+}
+
+.detail{
+    display:inline-block;
+    width:60%;
+    background:rgb(255,255,255);
+    box-shadow: 3px 5px 4px #979797;
+    height:250px;
+    text-align:left;
+    margin-right:auto;
+}
+
+.dimensions p {
+    margin-left: 5%;
+}
+
+.weight p {
+    margin-left: 5%;
+}
+
+/*Third row of content*/
+.recommended{
+    width:80%;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item{
+    margin-top: 0px;
+    display:inline-block;
+    width: 20%;
+    background-color:rgba(255,255,255,0.85);
+    border-radius: 12%;
+}
+
+.itemPic{
+    width:90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: block;
+    border-radius:10%;
+}
+
+.itemInfo{
+
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+}
+
+.itemName{
+    height: 30px;
+    font-size: 15px;
+    color:rgb(73,69,68);
+}
+
+.itemPrice{
+    font-size:17px;
+    font-weight: bold;
+    margin-bottom:25px;
+    margin-top: 13px;
+}
+
+.addTocart{
+    font-size: 18px;
+    color:rgb(255,255,255);
+    font-weight: 300;
+    background-color: rgb(104,80,71);
+    width:70%;
+    height:35px;
+    line-height:35px;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:auto;
+    margin-bottom: 25px;
+}
+
+/*adjustment of "Recommended" block*/
+.rec{
+    font-size:25px;
+}
+
+/*change the <p>'s default setting*/
+p{
+    margin-block-end:10px;
+    margin-block-start:0;
+}
+
+/*make the cat tab red*/
+.catTab a{
+    color:red;
+    text-decoration: underline;
+}
+
+/*get rid of the default <a> setting for "Home"*/
+a{
+    color:inherit;
+    text-decoration: none;
+}
