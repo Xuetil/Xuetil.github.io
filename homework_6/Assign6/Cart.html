@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" type="text/css" href="ShoppingCartStyle.css">
+</head>
+
+<!-- the page is divided into 4 rows - banner, product, product detail&review, recommended  -->
+<body>
+    <!-- contents that are in the banner -->
+    <div class="banner">
+        <!-- icons -->
+        <div class="iconGroup">
+            <!-- Help -->
+            <div class="tab">
+                <img class="icon" src="Pics/help.svg" alt="Help">
+                <p class="iconText">Help</p>
+            </div>
+            <!-- Cart -->
+            <div class="tab">
+                <a class="iconLinked" href="Cart.html">
+                    <img class="icon" src="Pics/cart.svg" alt="Cart">
+                    <p class="iconText">Cart</p>
+                    <div id="itemsinCart">1</div>
+                </a>
+            </div>
+            <!-- Account -->
+            <div class="tab">
+                <img class="icon" src="Pics/account.svg" alt="Account">
+                <p class="iconText">Account</p>
+            </div>
+            <!-- Home -->
+            <div class="tab">
+                <a class="iconLinked" href="../project3_html+css/Home.html">
+                    <img class="icon" src="Pics/home.svg" alt="Home">
+                    <p class="iconText">Home</p>
+                </a>
+            </div>
+        </div>
+        <!-- navigation -->
+        <nav>
+            <ol>
+                <li><div>Harness Attachments</div></li>
+                <li><div><a href="../project3_html+css/DogProduct.html">DOG</a></div></li>
+                <li><div class="catTab"><a href="../project3_html+css/CatProduct.html">CAT</a></div></li>               
+            </ol>
+        </nav>
+
+    </div>
+
+    <!-- elements that are below the banner on the yellow background -->
+    <div class="lowercontent">
+        <!-- first column -->
+        <div class="product">
+            <div class="PageName">
+                <p> Your Shopping Cart</p>
+            </div>
+            <!-- each individual shopping items -->
+            <div class="card">
+                <!-- subcolumn 1 -->
+                <!-- within each card, includes photo of the product and stock status -->
+                <div class="column1">
+                    <div class="pic"><img src="Pics/Backpack.jpg" alt="Cat Backpack"></div>
+                    <p class="stock">In stock</p>
+                </div>
+                <!-- subcolumn 2 -->
+                <!-- includes name, selected size, selected color and price of the product -->
+                <div class="column2">
+                    <!-- name of the product -->
+                    <p class="name"> Kitty Portable Backpack</p>
+                    <!-- size of the product -->
+                    <div class="size">
+                        <p class="text">Size: S</p>
+                    </div>
+                    <!-- color of the product -->
+                    <div class="color">
+                        <p class="text">Color: </p>
+                        <div class="square"></div>
+                    </div>
+                    <!-- price of the product -->
+                    <div class="price">
+                        <p> $59.98 </p>
+                    </div>
+
+                </div>
+                <!-- subcolumn 3 -->
+                <!-- include quantity of the product -->
+                <div class="column3">
+                    <!-- close button -->
+                    <div class="close">
+                        <button class="close_btn"></button>
+                    </div>
+                    <!-- quantity -->
+                     <div class="qty">
+                        <p>Qty.</p>
+                        <select class="qtyOption">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- second set of item -->
+            <div class="card">
+                <!-- subcolumn 1 -->
+                <div class="column1">
+                    <div class="pic"><img src="Pics/Backpack.jpg" alt="Cat Backpack"></div>
+                    <p class="stock">In stock</p>
+                </div>
+                <!-- subcolumn 2 -->
+                <div class="column2">
+                    <!-- name of the product -->
+                    <p class="name"> Kitty Portable Backpack</p>
+                    <!-- size of the product -->
+                    <div class="size">
+                        <p class="text">Size: S</p>
+                    </div>
+                    <!-- color of the product -->
+                    <div class="color">
+                        <p class="text">Color: </p>
+                        <div class="square"></div>
+                    </div>
+                    <!-- price of the product -->
+                    <div class="price">
+                        <p> $59.98 </p>
+                    </div>
+
+                </div>
+                <!-- subcolumn 3 -->
+                <div class="column3">
+                    <!-- close button -->
+                    <div class="close">
+                        <button class="close_btn"></button>
+                    </div>
+                    <!-- quantity -->
+                     <div class="qty">
+                        <p>Qty.</p>
+                        <select class="qtyOption">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- card of summarized information for checking out-->
+        <div class="checkoutInfo">
+            <div class="pricetags">
+               <p>Subtotal <span id = "items">(4 items): </span><span id = "price">$159.92</span></p> 
+               <p>Tax: <span id="tax">$8.23</span></p>
+               <p>Shipping: <span id="shipping">FREE</span></p>
+               <p class="totalprice">Total: <span id="total">$168.15</span></p>
+            </div>
+            <!-- check-out button -->
+            <div class="checkout">
+                <button class="btn">Proceed to Checkout</button>
+            </div>
+        </div>
+
+    </div>

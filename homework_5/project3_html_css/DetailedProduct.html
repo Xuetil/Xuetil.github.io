@@ -5,25 +5,33 @@
     <meta charset="UTF-8">
     <title>Product Detail</title>
     <link rel="stylesheet" type="text/css" href="DetailedProductStyle.css">
+    <script type="text/javascript" src="../Assign6/Detailedint.js"></script>
 </head>
 
+<!-- the page is divided into 4 rows - banner, product, product detail&review, recommended  -->
 <body>
     <!-- contents that are in the banner -->
     <div class="banner">
         <!-- icons -->
         <div class="iconGroup">
+            <!-- Help -->
             <div class="tab">
                 <img class="icon" src="help.svg" alt="Help">
                 <p class="iconText">Help</p>
             </div>
+            <!-- Cart -->
             <div class="tab">
+                <a class="iconLinked" href="../Assign6/Cart.html">
                 <img class="icon" src="cart.svg" alt="Cart">
                 <p class="iconText">Cart</p>
+                <div id="itemsinCart">1</div>
             </div>
+            <!-- Account -->
             <div class="tab">
                 <img class="icon" src="account.svg" alt="Account">
                 <p class="iconText">Account</p>
             </div>
+            <!-- Home -->
             <div class="tab">
                 <a class="iconLinked" href="Home.html">
                     <img class="icon" src="home.svg" alt="Home">
@@ -50,16 +58,17 @@
             <!-- first row of information -->
             <div class="row basicInfo">
                 <!-- first column -->
+                <!-- includes Name, photo and mini pics at the buttom -->
                 <div class="productPic">
-                    <div class="name">
+                    <div id="name">
                         <p> Kitty Portable Backpack</p>
                     </div>
                     <div class="picAlign">
                         <div class="arrow" ><img src="arrowLeft.png" alt="Left control arrow"></div>
-                        <div class="photo"><img src="Backpack.jpg" alt="Cat Backpack"></div>
+                        <div id="photo"><img src="Backpack.jpg" alt="Cat Backpack"></div>
                         <div class="arrow"><img src="arrowRight.png" alt="Right control arrow"></div>
                     </div>
-                    <div class="minis">
+                    <div id="minis">
                         <img src="miniPic_Select.png" alt="Mini picture preview">
                         <img src="miniPic.png" alt="Mini picture preview">
                         <img src="miniPic.png" alt="Mini picture preview">
@@ -68,8 +77,9 @@
 
                 <!-- second column -->
                 <div class="productInfo">
+                    <!-- price & rating -->
                     <div class="priceStar">
-                        <p style="font-weight: bold;font-size:20px;">$59.98</p>
+                        <p id="price" style="font-weight: bold;font-size:20px;">$59.98</p>
                         <div class="star" style="padding-bottom: 7px;">
                             <img src="Star.png" alt="Rating Star">
                             <img src="Star.png" alt="Rating Star">
@@ -78,37 +88,54 @@
                             <img src="Star.png" alt="Rating Star">
                         </div>
                     </div>
+                    <!-- size selection -->
                     <div class="size">
                         <p class="infoText">Sizes</p>
-                        <img class="sizeBar" src="Size.png" alt="Size Option Bar">
+                        <select class="sizeOption">
+                            <option value="xs">X-small (XS)</option>
+                            <option value="s">Small (S)</option>
+                            <option value="m">Medium (M)</option>
+                            <option value="L">Large (L)</option>
+                            <option value="xl">X-Large(XL)</option>
+                        </select>
                     </div>
+                    <!-- color selection -->
                     <div class="color">
                         <p class="infoText">Colors</p>
                         <div class="squares">
-                            <div class="square1"></div>
-                            <div class="square2"></div>
-                            <div class="square3"></div>
-                            <div class="square4"></div>
+                            <button id ="square1" value="yellow"></button>
+                            <button id ="square2" value="green"></button>
+                            <button id ="square3" value="pink"></button>
+                            <button id ="square4" value="purple"></button>
+                        </div>
                     </div>
+                    <!-- quantity selection -->
                     <div class="quantity">
-                        <p3 class="infoText">Qty.</p3>
-                        <img class="qty" src="Qty.png" alt="Quantity Selection Bar">
+                        <p class="infoText">Qty.</p>
+                        <select class="qtyOption">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
                     </div>
-                </div>
             </div>
+
                 <!-- third column -->
-                <div class="addCart">
-                    <p>Add to Cart</p>
+                <!-- add to cart button -->
+                <div id="addCart">
+                    <button class="btn">Add to Cart</button>
                 </div>
         </div>
 
         
         <!-- second row of information -->
         <div class="row additional">
+            <!-- header of product detail and review -->
             <div class="addText">
                 <div class="proDetailsText"><p>Product Details</p></div>
                 <div class="reviewText"><p>Review</p></div>
             </div>
+            <!-- product detail -->
             <div class="detail">
                 <div class="dimensions">    
                     <ul>
@@ -138,7 +165,8 @@
         <div class="row recommended">
             <div class="rec"><p>Recommended</p></div>
             <!-- individual product -->
-            <div class="item" style="margin-right: 6.2%;">
+                <!-- item 1 -->
+                <div class="item" style="margin-right: 6.2%;">
                     <img class="itemPic" src="Catcollar.jpg" alt="Cat Collar">
                     <div class="itemInfo">
                         <div class="itemName">Cone GPS Collar</div>
@@ -146,6 +174,7 @@
                         <div class="addTocart">Add to Cart</div>
                     </div>
                 </div>
+                <!-- item 2 -->
                 <div class="item" style="margin-right: 6.2%;">    
                     <img class="itemPic" src="Catharness.jpg" alt="Harnessed Cat">
                     <div class="itemInfo">    
@@ -154,6 +183,7 @@
                         <div class="addTocart">Add to Cart</div>
                     </div>
                 </div>
+                <!-- item 3 -->
                 <div class="item" style="margin-right: 6.2%;">   
                     <img class="itemPic" src="erzi.jpg" alt="Harnessed Dog">
                     <div class="itemInfo">    
@@ -162,6 +192,7 @@
                         <div class="addTocart">Add to Cart</div>
                     </div>
                 </div>
+                <!-- item 4 -->
                 <div class="item">
                     <img class="itemPic" src="Corgi.jpg" alt="Harnessed Corgi">
                     <div class="itemInfo">

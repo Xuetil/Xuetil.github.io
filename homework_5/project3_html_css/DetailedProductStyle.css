@@ -33,6 +33,18 @@ body{
     overflow: auto;
 }
 
+#itemsinCart{
+    display: none;
+    position:relative;
+    top:-52px;
+    left: 35px;
+    background-color:#D71D1D;
+    color:#FFFFFF;
+    height:13px;
+    width:13px;
+    border-radius:100% 100%;
+}
+
 /*navigation tabs*/
 nav{
     overflow: auto;
@@ -85,7 +97,7 @@ nav li div{
     margin-left: 7%;
 }
 
-.name{
+#name{
     font-size: 25px;
     font-weight: bold;
     color:rgb(81,64,58);
@@ -115,12 +127,12 @@ nav li div{
     /*height: 100px;*/
     width:10%;
     height:100%;
-    padding-top: 150px;
+    padding-top: 130px;
     /*background-color: red;*/
 }
 
 /*product photo*/
-.photo{
+#photo{
     width:80%;
     text-align: center;
     /*background-color: blue;*/
@@ -128,17 +140,18 @@ nav li div{
 }
 
 /*adjust the photo size and border*/
-.photo img{
+#photo img{
     border: 5px solid rgba(255,255,255,0.85);
     width:80%;
 }
 
 /*the mini pics below the product photo*/
-.minis{
+#minis{
     padding-top: 20px;
     text-align: center;
 }
 
+/*All other detailed info of the product, on the right of the photo*/
 .productInfo{
     width:30%;
     float:left;
@@ -146,55 +159,63 @@ nav li div{
     padding-left: 80px;
 }
 
-/*color squares for color selections*/
-.square1{
-    height:22px;
-    width:22px;
-    background-color:rgb(248,225,135);
-    border:2px solid rgb(151,151,151);
-    display:inline-block;
-}
-.square2{
-    height:22px;
-    width:22px;
-    background-color:rgb(156,216,94);
-    border:2px solid rgb(151,151,151);
-    display:inline-block;
-}
-.square3{
-    height:22px;
-    width:22px;
-    background-color:rgb(245,162,162);
-    border:2px solid rgb(151,151,151);
-    display:inline-block;
-}
-.square4{
-    height:22px;
-    width:22px;
-    background-color:rgb(179,168,230);
-    border:2px solid rgb(151,151,151);
-    display:inline-block;
+/*Dropdown menu for size*/
+.sizeOption{
+    width:40%;
+    margin-bottom: 13px;
+    border-color:rgb(151,151,151);
+    font-size: 14px;
+    height:30px;
 }
 
-/*adjustment of quantity pic. */
-.qty{
-    display:block;
-    width:40px;
-    padding-top: 8px;
+/*color squares for color selections*/
+#square1{
+    background-color:rgb(248,225,135);
+    /*border:2px solid rgb(151,151,151);*/
+    margin-right: 3px; 
+}
+#square2{
+    background-color:rgb(156,216,94);
+    /*border:2px solid rgb(151,151,151);*/
+    margin-right: 3px; 
+}
+#square3{
+    background-color:rgb(245,162,162);
+    /*border:2px solid rgb(151,151,151);*/
+    margin-right: 3px;
+}
+#square4{
+    background-color:rgb(179,168,230);
+}
+
+.squares button {
+    height:22px;
+    width:22px;
+    display:inline-block;
+    border-width: 3px;
 }
 
 /*adjust the entire quantity div*/
 .quantity{
-    padding-top: 17px;
+    padding-top: 10px;
 }
 
-.addCart{
+.qtyOption{
+    width:13%;
+    margin-bottom: 15px;
+    border-color:rgb(151,151,151);
+    font-size: 13px;
+    height:25px;
+
+}
+
+#addCart{
     width:20%;
     float:left;
-    font-size: 25px;
-    color:rgb(255,255,255);
+ /*   font-size: 25px;*/
+/*    color:rgb(255,255,255);*/
     font-weight: 300;
-    background-color: rgb(104,80,71);
+    /*background-color: rgb(104,80,71);*/
     height:50px;
     line-height:50px;
     text-align: center;
@@ -204,10 +225,16 @@ nav li div{
     margin-left: 50px;
     margin-top: 280px;
 }
-
-.addCart p{
-    margin-block-start:0;
-    margin-block-end:0;
+/*style for "Add to cart" button*/
+.btn{
+    border: none;
+    background-color:#685047;
+    font-size:25px;
+    color:rgb(255,255,255);
+    padding:14px 34px ;
+    cursor:pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.18), 0 6px 20px 0 rgba(0,0,0,0.15);
+    display: inline-block;
 }
 
 /*for getting rid of the gaps between two inline boxes: "Product Details"&"Review"*/
