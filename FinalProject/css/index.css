@@ -1,5 +1,5 @@
 /*home page background*/
-#id_home{
+#id_home {
     background-color: rgb(229,217,204);
     background-repeat: no-repeat;
     background-position: center;
@@ -7,11 +7,27 @@
     background-size: cover;
 }
 /*home page logo position*/
-#logo{
+
+#logo {
     /*width:150px;*/
     margin-top: 3vh;
     margin-bottom: 5vh;
-    /*display:block;*/
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 200px;
+    /*width:50%;*/
+    display:block;
+    /*background-color: blue;*/
+}
+
+.pot_size{
+    width: auto;
+    height:20vmin;
+}
+
+.pot_size img{
+    width: auto;
+    height:100%;
 }
 
 /*home page picture alignment*/
@@ -131,12 +147,11 @@
     top:50%;
     left: 50%;
     transform:translate(-50%,-50%);
-
 }
 
 /*bold and enlarge some texts*/
 strong{
-    font-size:15pt;
+    font-size:1.1em;
 }
 /*set the position for the texts*/
 p{
@@ -202,6 +217,112 @@ p{
     transform:translateY(0px);
 }
 
+
+@media (max-aspect-ratio: 1/1) {
+    /*#logo{
+        background-color: pink;
+    }*/
+    .information p{
+        font-size: 0.8em;
+        /*background-color: pink;*/
+    }
+    .information strong{
+        font-size: 1em;
+        /*background-color: pink;*/
+    }
+    .first_row{
+        display:none;
+    }
+    #bj_background{
+        background-image: url("../img/beijing_real.png");
+        background-size:cover;
+    }
+    #jg_background{
+        background-image: url("../img/jiu_real.png");
+        background-size:cover;
+    }
+    #chuan_background{
+        background-image: url("../img/chuanchuan_real.png");
+        background-size:cover;
+    }
+    #seafood_background{
+        background-image: url("../img/seafood_real.png");
+        background-size:cover;
+    }
+    #chao_background{
+        background-image: url("../img/chaoshan_real.png");
+        background-size:cover;
+    }
+    #coconut_background{
+        background-image: url("../img/coconut_real.png");
+        background-size:cover;  
+    }
+
+    .btn_down{
+        background-image: url(../img/jiantou_color.png);
+        background-repeat: no-repeat;
+    }
+
+    .btn_up{
+        background-image: url(../img/jiantou_color.png);
+        background-repeat: no-repeat;
+        transform:rotate(180deg);
+    }
+
+    .info{
+        background-color:rgba(255,255,255,0.8);
+    }
+/*    .title img{
+        margin-top: 30px;
+    }*/
+}
+
+@media (min-aspect-ratio: 1/1) and (min-width: 576px) {
+    /*#logo {
+        background-color: red;
+    }*/
+}
+@media (min-aspect-ratio: 1/1) and (min-width: 768px) {
+    /*#logo{
+        background-color: blue;
+    }*/
+    .information p{
+        font-size: 0.7em;
+       /* background-color: blue;*/
+    }
+    .information strong{
+        font-size: 0.9em;
+        /*background-color: blue;*/
+    }
+}
+
+@media (min-aspect-ratio: 1/1) and (min-width: 992px) {
+   /* #logo{
+        background-color: green;
+    }*/
+    .information p{
+        font-size: 1em;
+        /*background-color: green;*/
+    }
+    .information strong{
+        font-size: 1.1em;
+        /*background-color: green;*/
+    }
+}
+
+@media (min-aspect-ratio: 1/1) and (min-width: 1200px) {
+/*    #logo{
+        background-color: black;
+    }*/
+    .information p{
+        font-size: 1em;
+       /* background-color: black;*/
+    }
+    .information strong{
+        font-size: 1.1em;
+       /* background-color: black;*/
+    }
+}
 
 @keyframes bounce {
   0%,

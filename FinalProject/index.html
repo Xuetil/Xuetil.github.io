@@ -32,24 +32,26 @@
     <section data-section-name="home" id="id_home">
         <div class="container-fluid">
             <!-- the logo for the website -->
-            <div class="mx-auto" style="width: 200px;">
-                <img class="img-fluid" id="logo" src="img/logo.png" alt="Logo">
+            <div class="row">
+                <div class="col-lg-12 center-block">
+                    <img class="img-fluid" id="logo" src="img/logo.png" alt="Logo">
+                </div>
             </div>
             <!-- first row of hotpot, equally distributed horizontally -->
             <div class="row" style="margin-top: 0vh;">
-                <div class="col-lg-4  col-sm-6 col-xs-6 home_pic_box up_row" id="beijing_pic">
+                <div class="col-lg-4 col-md-4 col-6 home_pic_box up_row pot_size" id="beijing_pic">
                     <img class="img-fluid" src="img/BeijingHotpot.png" alt="Beijing Hotpot">
                     <div class="mask">
                         <h2>Beijing Hotpot</h2>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 col-xs-6 home_pic_box up_row" id="jiugongge_pic">
+                <div class="col-lg-4 col-md-4 col-6 home_pic_box up_row pot_size" id="jiugongge_pic">
                     <img class="img-fluid" src="img/Jiugongge.png" alt="Jiugongge Hotpot">
                     <div class="mask">
                         <h2>Jiugongge Hotpot</h2>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 col-xs-6 home_pic_box up_row" id="chuanchuan_pic">
+                <div class="col-lg-4 col-md-4 col-6 home_pic_box up_row pot_size" id="chuanchuan_pic">
                     <img class="img-fluid" src="img/chuanchuan.png" alt="Chuanchuan Hotpot">
                     <div class="mask">
                         <h2>Chuanchuan Hotpot</h2>
@@ -58,19 +60,19 @@
             <!-- </div> -->
             <!-- second row of hotpot, equally distributed horizontally -->
             <!-- <div class="row" style="margin-top: 3vh;"> -->
-                <div class="col-lg-4 col-sm-6 col-xs-6 home_pic_box" id="seafood_pic">
+                <div class="col-lg-4 col-md-4 col-6 home_pic_box pot_size" id="seafood_pic">
                     <img class="img-fluid" src="img/Seafood.png" alt="Seafood Hotpot">
                     <div class="mask">
                         <h2>Seafood Hotpot</h2>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 col-xs-6 home_pic_box" id="chaoshan_pic">
+                <div class="col-lg-4 col-md-4 col-6 home_pic_box pot_size" id="chaoshan_pic">
                     <img class="img-fluid" src="img/Chaoshan.png" alt="Chaoshan Beef Hotpot">
                     <div class="mask">
                         <h2>Chaoshan Beef Hotpot</h2>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 col-xs-6 home_pic_box" id="coconut_pic">
+                <div class="col-lg-4 col-md-4 col-6 home_pic_box pot_size" id="coconut_pic">
                     <img class="img-fluid" src="img/Coconut.png" alt="Coconut Chicken Hotpot">
                     <div class="mask">
                         <h2>Coconut Chicken Hotpot</h2>
@@ -79,13 +81,13 @@
             </div>
             <!-- text on the home page -->
             <div class="row" style="margin-top: 3vh;">
-                <div class="col-lg-12 home_text">
+                <div class="col-lg-12 col-12 home_text">
                     <p>A Brief Intro of Chinese Hotpot!</p>
                 </div>
             </div>
             <!-- the small navigation arrow-->
             <div class="row">
-                <div class="col-lg-12" style="margin-bottom: 3vh;">
+                <div class="col-lg-12 col-12" style="margin-bottom: 3vh;">
                     <div class="arrow">
                         <!-- <img class="img-fluid" id="arrow" src="img/jiantou.png" alt="navigation arrow"> -->
                         <button class="btn btn_down"></button>
@@ -103,16 +105,16 @@
             <!-- There is only one general row on the page -->
             <div class="row" style="height: 100vh">
                 <!-- first column of the page, for hotpot picture -->
-                <div class="col-lg-6 delete_padding bj_real">
+                <div class="col-lg-6 col-md-6 col-0 delete_padding bj_real first_row">
                     <div class="real_pic">
                         <!-- <img class="img-fluid" id="beijing_real" src="img/beijing_real.png" alt="Beijing Hotpot"> -->
                     </div>
                 </div>
                 <!-- second column of the page for hotpot information -->
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-12 second_row" id="bj_background">
                     <!-- hotpot title -->
                     <div class="row h-25 info" style="padding-top: 8vh;">
-                        <div class="col-lg-12 title">
+                        <div class="col-lg-12 col-md-6 title">
                             <img class="img-fluid" id="beijing_title" src="img/beijing_title.png" alt="Beijing Hotpot title">      
                         </div>
                     </div>
@@ -146,13 +148,10 @@
             <!-- There is only one general row on the page -->
             <div class="row" style="height: 100vh">
                 <!-- first column of the page, for hotpot picture -->
-                <div class="col-lg-6 delete_padding jiu_real">
-                   <!--  <div class="real_pic">
-                        <img class="img-fluid" id="beijing_real" src="img/beijing_real.png" alt="Beijing Hotpot">
-                    </div> -->
+                <div class="col-lg-6 col-md-6 col-0 delete_padding jiu_real first_row">
                 </div>
                 <!-- second column of the page for hotpot information -->
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-12 second_row" id="jg_background">
                     <!-- hotpot title -->
                     <div class="row h-25 info" style="padding-top: 8vh;">
                         <div class="col-lg-12 title">
@@ -188,13 +187,13 @@
             <!-- There is only one general row on the page -->
             <div class="row" style="height: 100vh">
                 <!-- first column of the page, for hotpot picture -->
-                <div class="col-lg-6 delete_padding chuan_real">
+                <div class="col-lg-6 col-md-6 col-0 delete_padding chuan_real first_row">
                    <!--  <div class="real_pic">
                         <img class="img-fluid" id="beijing_real" src="img/beijing_real.png" alt="Beijing Hotpot">
                     </div> -->
                 </div>
                 <!-- second column of the page for hotpot information -->
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-12 second_row" id="chuan_background">
                     <!-- hotpot title -->
                     <div class="row h-25 info" style="padding-top: 8vh;">
                         <div class="col-lg-12 title">
@@ -230,13 +229,13 @@
             <!-- There is only one general row on the page -->
             <div class="row" style="height: 100vh">
                 <!-- first column of the page, for hotpot picture -->
-                <div class="col-lg-6 delete_padding seafood_real">
+                <div class="col-lg-6 col-md-6 col-0 delete_padding seafood_real first_row">
                    <!--  <div class="real_pic">
                         <img class="img-fluid" id="beijing_real" src="img/beijing_real.png" alt="Beijing Hotpot">
                     </div> -->
                 </div>
                 <!-- second column of the page for hotpot information -->
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-12 second_row" id="seafood_background">
                     <!-- hotpot title -->
                     <div class="row h-25 info" style="padding-top: 8vh;">
                         <div class="col-lg-12 title">
@@ -272,13 +271,13 @@
             <!-- There is only one general row on the page -->
             <div class="row" style="height: 100vh">
                 <!-- first column of the page, for hotpot picture -->
-                <div class="col-lg-6 delete_padding chaoshan_real">
+                <div class="col-lg-6 col-md-6 col-0 delete_padding chaoshan_real first_row">
                    <!--  <div class="real_pic">
                         <img class="img-fluid" id="beijing_real" src="img/beijing_real.png" alt="Beijing Hotpot">
                     </div> -->
                 </div>
                 <!-- second column of the page for hotpot information -->
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-12 second_row" id="chao_background">
                     <!-- hotpot title -->
                     <div class="row h-25 info" style="padding-top: 8vh;">
                         <div class="col-lg-12 title">
@@ -314,13 +313,13 @@
             <!-- There is only one general row on the page -->
             <div class="row" style="height: 100vh">
                 <!-- first column of the page, for hotpot picture -->
-                <div class="col-lg-6 delete_padding coconut_real">
+                <div class="col-lg-6 col-md-6 col-0 delete_padding coconut_real first_row">
                    <!--  <div class="real_pic">
                         <img class="img-fluid" id="beijing_real" src="img/beijing_real.png" alt="Beijing Hotpot">
                     </div> -->
                 </div>
                 <!-- second column of the page for hotpot information -->
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-12 second_row" id="coconut_background">
                     <!-- hotpot title -->
                     <div class="row h-25 info" style="padding-top: 8vh;">
                         <div class="col-lg-12 title">
