@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- Popper -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- Scrollify -->
+    <script type="text/javascript" src="js/jquery.scrollify.js"></script>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Nanum+Brush+Script&display=swap" rel="stylesheet">
+    
+    <title>Hotpots in China</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+    <!-- home page of the website -->
+    <section data-section-name="home" id="id_home">
+        <div class="container-fluid">
+            <!-- the logo for the website -->
+            <div class="mx-auto" style="width: 200px;">
+                <img class="img-fluid" id="logo" src="img/logo.png" alt="Logo">
+            </div>
+            <!-- first row of hotpot, equally distributed horizontally -->
+            <div class="row" style="margin-top: 0vh;">
+                <div class="col-lg-4 home_pic_box" id="beijing_pic">
+                    <img class="img-fluid" src="img/BeijingHotpot.png" alt="Beijing Hotpot">
+                    <div class="mask">
+                        <h2>Beijing Hotpot</h2>
+                    </div>
+                </div>
+                <div class="col-lg-4 home_pic_box" id="jiugongge_pic">
+                    <img class="img-fluid" src="img/Jiugongge.png" alt="Jiugongge Hotpot">
+                    <div class="mask">
+                        <h2>Jiugongge Hotpot</h2>
+                    </div>
+                </div>
+                <div class="col-lg-4 home_pic_box" id="chuanchuan_pic">
+                    <img class="img-fluid" src="img/Chuanchuan.png" alt="Chuanchuan Hotpot">
+                    <div class="mask">
+                        <h2>Chuanchuan Hotpot</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- second row of hotpot, equally distributed horizontally -->
+            <div class="row" style="margin-top: 3vh;">
+                <div class="col-lg-4 home_pic_box" id="seafood_pic">
+                    <img class="img-fluid" src="img/Seafood.png" alt="Seafood Hotpot">
+                    <div class="mask">
+                        <h2>Seafood Hotpot</h2>
+                    </div>
+                </div>
+                <div class="col-lg-4 home_pic_box" id="chaoshan_pic">
+                    <img class="img-fluid" src="img/Chaoshan.png" alt="Chaoshan Beef Hotpot">
+                    <div class="mask">
+                        <h2>Chaoshan Beef Hotpot</h2>
+                    </div>
+                </div>
+                <div class="col-lg-4 home_pic_box" id="coconut_pic">
+                    <img class="img-fluid" src="img/Coconut.png" alt="Coconut Chicken Hotpot">
+                    <div class="mask">
+                        <h2>Coconut Chicken Hotpot</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- text on the home page -->
+            <div class="row" style="margin-top: 3vh;">
+                <div class="col-lg-12 home_text">
+                    <p>A Brief Intro of Chinese Hotpot!</p>
+                </div>
+            </div>
+            <!-- the small navigation arrow-->
+            <div class="row">
+                <div class="col-lg-12" style="margin-bottom: 3vh;">
+                    <div class="arrow">
+                        <!-- <img class="img-fluid" id="arrow" src="img/jiantou.png" alt="navigation arrow"> -->
+                        <button class="btn btn_down"></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>  
+    </section>
+
+    <!-- hotpot page template -->
+    <!-- Beijing Hotpot Page -->
+    <section data-section-name="beijing_hotpot" class="color beijing">
+         <div class="container-fluid">
+            <!-- There is only one general row on the page -->
+            <div class="row" style="height: 100vh">
+                <!-- first column of the page, for hotpot picture -->
+                <div class="col-lg-6 delete_padding bj_real">
+                    <div class="real_pic">
+                        <!-- <img class="img-fluid" id="beijing_real" src="img/beijing_real.png" alt="Beijing Hotpot"> -->
+                    </div>
+                </div>
+                <!-- second column of the page for hotpot information -->
+                <div class="col-lg-6">
+                    <!-- hotpot title -->
+                    <div class="row h-25 info" style="padding-top: 8vh;">
+                        <div class="col-lg-12 title">
+                            <img class="img-fluid" id="beijing_title" src="img/beijing_title.png" alt="Beijing Hotpot title">      
+                        </div>
+                    </div>
+                    <!-- hotpot information -->
+                    <div class="row text_box" style="height:60vh;">
+                        <div class="information">
+                            <p><strong>Location: </strong>   Beijing, China</p>
+                            <p><strong>Soupbase:</strong></p>
+                            <p>Long-hour stewed pork-bone soup with slices of ginger, minced green onion, mushrooms, goji berry and dates</p>
+                            <p><strong>What is known for:</strong></p>
+                            <p>Bejing hotpot is known for its thin-sliced, hand crafted lamb meat. Every slice is controlled in 0.9mm to 1.2mm, which is thin enough for the light to go through. The typical three vegeterian choices for the hotpot are cabbage, tofu and glass noodle.</p>
+                            <p><strong>Recommended Sauce:</strong></p>
+                            <p>Sugar pickled garlic, minced leek, sesame paste and fermented tofu juice</p>
+                        </div>
+                    </div>
+                    <!-- navigation arrow -->
+                    <div class="row arrow" style="padding-top: 10vh;">
+                         <!-- <img class="img-fluid" id="arrow" src="img/jiantou.png" alt="navigation arrow"> -->
+                        <button class="btn btn_down"></button> 
+                    </div>                
+                </div>
+            </div>
+        
+
+        </div>
+    </section>
+
+    <!-- Jiugongge hotpot page -->
+    <section data-section-name="jiugongge_hotpot" class="color jiugongge">
+        <div class="container-fluid"> 
+            <!-- There is only one general row on the page -->
+            <div class="row" style="height: 100vh">
+                <!-- first column of the page, for hotpot picture -->
+                <div class="col-lg-6 delete_padding jiu_real">
+                   <!--  <div class="real_pic">
+                        <img class="img-fluid" id="beijing_real" src="img/beijing_real.png" alt="Beijing Hotpot">
+                    </div> -->
+                </div>
+                <!-- second column of the page for hotpot information -->
+                <div class="col-lg-6">
+                    <!-- hotpot title -->
+                    <div class="row h-25 info" style="padding-top: 8vh;">
+                        <div class="col-lg-12 title">
+                            <img class="img-fluid" id="jiu_title" src="img/jiu_title.png" alt="Beijing Hotpot title">      
+                        </div>
+                    </div>
+                    <!-- hotpot information -->
+                    <div class="row text_box" style="height:60vh;">
+                        <div class="information">
+                            <p><strong>Location: </strong>   Chongqing, China</p>
+                            <p><strong>Soupbase:</strong></p>
+                            <p>Ingredients include: thick layers of beef tallow, Sichuan peper, chilli. The soup is usually burning spicy.</p>
+                            <p><strong>What is known for:</strong></p>
+                            <p>The middle grid is for fast boils such as animal haslet (must haves), which only needs 8-15 seconds. The cross grids are for food that needs to be boiled for 2-10 minutes. Lastly, the four corners are for stewing over 20 minutes. The tradition is to boil meat before vegetables.</p>
+                            <p><strong>Recommended Sauce:</strong></p>
+                            <p>Oil dish: sesame oil, mashed garlic, salt, minced parsley and green onion, millet pepper. Dry dish: chilli powder, peparika powder, aginomoto，peanut crunches</p>
+                        </div>
+                    </div>
+                    <!-- navigation arrow -->
+                    <div class="row arrow" style="padding-top: 10vh;">
+                         <!-- <img class="img-fluid" id="arrow" src="img/jiantou.png" alt="navigation arrow"> -->
+                         <button class="btn btn_down"></button>
+                    </div>                
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+    <!-- Chuanchuan hotpot page -->
+    <section data-section-name="chuanchuan_hotpot" class="color chuanchuan">
+        <div class="container-fluid"> 
+            <!-- There is only one general row on the page -->
+            <div class="row" style="height: 100vh">
+                <!-- first column of the page, for hotpot picture -->
+                <div class="col-lg-6 delete_padding chuan_real">
+                   <!--  <div class="real_pic">
+                        <img class="img-fluid" id="beijing_real" src="img/beijing_real.png" alt="Beijing Hotpot">
+                    </div> -->
+                </div>
+                <!-- second column of the page for hotpot information -->
+                <div class="col-lg-6">
+                    <!-- hotpot title -->
+                    <div class="row h-25 info" style="padding-top: 8vh;">
+                        <div class="col-lg-12 title">
+                            <img class="img-fluid" id="chuan_title" src="img/chuan_title.png" alt="Chuanchuan Hotpot title">      
+                        </div>
+                    </div>
+                    <!-- hotpot information -->
+                    <div class="row text_box" style="height:60vh;">
+                        <div class="information">
+                            <p><strong>Location: </strong>   Sichuan, China</p>
+                            <p><strong>Soupbase:</strong></p>
+                            <p>Ingredients include: fermented soy beans, chilli, Sichuan peper, ginger, amazake, salt,chicken powder, and many other spices. The soup is usually burning spicy.</p>
+                            <p><strong>What is known for:</strong></p>
+                            <p>Put raw skewers into the soup and boils for 5-10 minutes. It's known for the variety of ingredients and the easiness to eat.</p>
+                            <p><strong>Recommended Sauce:</strong></p>
+                            <p>Oil dish: sesame oil, mashed garlic, salt, minced parsley and green onion, millet pepper. Dry dish: chilli powder, peparika powder, aginomoto，peanut crunches. Must-have is the sprinkle of sesame on top of the ingredients.</p>
+                        </div>
+                    </div>
+                    <!-- navigation arrow -->
+                    <div class="row arrow" style="padding-top: 10vh;">
+                         <!-- <img class="img-fluid" id="arrow" src="img/jiantou.png" alt="navigation arrow"> -->
+                         <button class="btn btn_down"></button>
+                    </div>                
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+    <!-- Seafood hotpot page -->
+    <section data-section-name="seafood_hotpot" class="color seafood">
+     <div class="container-fluid"> 
+            <!-- There is only one general row on the page -->
+            <div class="row" style="height: 100vh">
+                <!-- first column of the page, for hotpot picture -->
+                <div class="col-lg-6 delete_padding seafood_real">
+                   <!--  <div class="real_pic">
+                        <img class="img-fluid" id="beijing_real" src="img/beijing_real.png" alt="Beijing Hotpot">
+                    </div> -->
+                </div>
+                <!-- second column of the page for hotpot information -->
+                <div class="col-lg-6">
+                    <!-- hotpot title -->
+                    <div class="row h-25 info" style="padding-top: 8vh;">
+                        <div class="col-lg-12 title">
+                            <img class="img-fluid" id="seafood_title" src="img/seafood_title.png" alt="Seafood Hotpot title">      
+                        </div>
+                    </div>
+                    <!-- hotpot information -->
+                    <div class="row text_box" style="height:60vh;">
+                        <div class="information">
+                            <p><strong>Location: </strong>   Coastal area of China</p>
+                            <p><strong>Soupbase:</strong></p>
+                            <p>Ingredients include: Pork bone soup, salt, lapa and Shaoxing rice cooking wine. The soup is usually very savory and drinkable.</p>
+                            <p><strong>What is known for:</strong></p>
+                            <p>The seafood hotpot is known for its freshness of the seafood ingredients. The hotopot usually includes crab, shrimp, fish, clams, cabbage, mushroom, frozen bean curd, and glass noodle.</p>
+                            <p><strong>Recommended Sauce:</strong></p>
+                            <p>Vinegar, chopped garlic, sliced ginger and a little bit soy sauce. Sometimes, couple drops of lime.</p>
+                        </div>
+                    </div>
+                    <!-- navigation arrow -->
+                    <div class="row arrow" style="padding-top: 10vh;">
+                         <!-- <img class="img-fluid" id="arrow" src="img/jiantou.png" alt="navigation arrow"> -->
+                         <button class="btn btn_down"></button>
+                    </div>                
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+    <!-- Chaoshan beef hotpot page -->
+    <section data-section-name="chaoshan_hotpot" class="color chaoshan">
+        <div class="container-fluid"> 
+            <!-- There is only one general row on the page -->
+            <div class="row" style="height: 100vh">
+                <!-- first column of the page, for hotpot picture -->
+                <div class="col-lg-6 delete_padding chaoshan_real">
+                   <!--  <div class="real_pic">
+                        <img class="img-fluid" id="beijing_real" src="img/beijing_real.png" alt="Beijing Hotpot">
+                    </div> -->
+                </div>
+                <!-- second column of the page for hotpot information -->
+                <div class="col-lg-6">
+                    <!-- hotpot title -->
+                    <div class="row h-25 info" style="padding-top: 8vh;">
+                        <div class="col-lg-12 title">
+                            <img class="img-fluid" id="chaoshan_title" src="img/chao_title.png" alt="Chaoshan Beef Hotpot title">      
+                        </div>
+                    </div>
+                    <!-- hotpot information -->
+                    <div class="row text_box" style="height:60vh;">
+                        <div class="information">
+                            <p><strong>Location: </strong>   Guangdong, China</p>
+                            <p><strong>Soupbase:</strong></p>
+                            <p>Ingredients include: depends on the preference, some people choose to use spring water, but more traditional soupbase includes beef bone soup and galangal. The soup is usually clear.</p>
+                            <p><strong>What is known for:</strong></p>
+                            <p>Chaoshan beef hotpot is known for its freshness of the beef and chef's adept slicing skills. The beef is usually served within 2-3 hours fresh window, and they served by different parts of the cow. The best way to eat is a quick dip of 5-10 seconds of a slice of beef.</p>
+                            <p><strong>Recommended Sauce:</strong></p>
+                            <p>Satay dish: peanuts, sesame, dried sea shrimp, fermented soy bean, fried garlic and chopped green onion.</p>
+                        </div>
+                    </div>
+                    <!-- navigation arrow -->
+                    <div class="row arrow" style="padding-top: 10vh;">
+                         <!-- <img class="img-fluid" id="arrow" src="img/jiantou.png" alt="navigation arrow"> -->
+                         <button class="btn btn_down"></button>
+                    </div>                
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+    <!-- Coconut chicken hotpot page -->
+    <section data-section-name="coconut_hotpot" class="color coconut">
+        <div class="container-fluid"> 
+            <!-- There is only one general row on the page -->
+            <div class="row" style="height: 100vh">
+                <!-- first column of the page, for hotpot picture -->
+                <div class="col-lg-6 delete_padding coconut_real">
+                   <!--  <div class="real_pic">
+                        <img class="img-fluid" id="beijing_real" src="img/beijing_real.png" alt="Beijing Hotpot">
+                    </div> -->
+                </div>
+                <!-- second column of the page for hotpot information -->
+                <div class="col-lg-6">
+                    <!-- hotpot title -->
+                    <div class="row h-25 info" style="padding-top: 8vh;">
+                        <div class="col-lg-12 title">
+                            <img class="img-fluid" id="coconut_title" src="img/coconut_title.png" alt="Coconut Chicken Hotpot title">      
+                        </div>
+                    </div>
+                    <!-- hotpot information -->
+                    <div class="row text_box" style="height:60vh;">
+                        <div class="information">
+                            <p><strong>Location: </strong>   Hainan, China</p>
+                            <p><strong>Soupbase:</strong></p>
+                            <p>Ingredients include: mixed young and old coconut, a spring chicken, rice cooking wine, soy sauce, ginger and salt. The soup is usually savory and a little bit sweet.</p>
+                            <p><strong>What is known for:</strong></p>
+                            <p>Coconut chicken hotpot is known for its light taste. Unlike other hotpot, this hotpot is not greasy or strong. It tastes the best with cabbage, sweet corn, and dried bamboo fungus. </p>
+                            <p><strong>Recommended Sauce:</strong></p>
+                            <p>Minced galangal, chopped chilli, soy sauce and drops of lime juice.</p>
+                        </div>
+                    </div>
+                    <!-- navigation arrow -->
+                    <div class="row arrow" style="padding-top: 10vh;">
+                         <!-- <img class="img-fluid" id="arrow" src="img/jiantou.png" alt="navigation arrow"> -->
+                         <button class="btn btn_up"></button>
+                    </div>                
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+</body>

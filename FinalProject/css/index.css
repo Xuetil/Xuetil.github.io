@@ -1,0 +1,213 @@
+/*home page background*/
+#id_home{
+    background-color: rgb(229,217,204);
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    background-size: cover;
+}
+/*home page logo position*/
+#logo{
+    /*width:150px;*/
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+    /*display:block;*/
+}
+
+/*home page picture alignment*/
+.home_pic_box {
+    text-align: center;
+}
+
+/*home page bottom text alignment*/
+.home_text{
+    text-align:center;
+    font-size: 24pt;
+    font-family:'Nanum Brush Script',cursive;
+}
+/*navigation arrow position*/
+.arrow{
+    float:right;
+    margin-right: 2vw;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+/*background color for individual hotpot pages*/
+.color{
+    background-color: rgb(247,245,240);
+}
+
+/*get rid of the default padding*/
+.delete_padding{
+    padding-left:0px;
+    padding-right: 0px;
+}
+
+/*set the background image for hotpot pages*/
+.bj_real{
+    background-image: url("../img/beijing_real.png");
+    background-size: cover;
+}
+
+.jiu_real{
+    background-image: url("../img/jiu_real.png");
+    background-size: cover;
+}
+
+.chuan_real{
+    background-image: url("../img/chuanchuan_real.png");
+    background-size: cover;
+}
+
+.seafood_real{
+    background-image: url("../img/seafood_real.png");
+    background-size: cover;
+}
+
+.chaoshan_real{
+    background-image: url("../img/chaoshan_real.png");
+    background-size: cover;
+}
+
+.coconut_real{
+    background-image: url("../img/coconut_real.png");
+    background-size: cover;
+}
+/*set title for hotpot pages*/
+#beijing_title{
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
+#jiu_title{
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
+#chuan_title{
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
+#seafood_title{
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
+#chaoshan_title{
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
+#coconut_title{
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+/*set background color for the information box*/
+.text_box{
+    background-color: rgba(179,16,19,0.78);
+    position:relative;
+}
+
+/*set position for the information box*/
+.information{
+    color:rgb(247,245,240);
+    margin-left: auto;
+    margin-right: auto;   
+    width:90%;
+    font-size:13pt;
+    /*padding-top: 5%;*/
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+
+}
+
+/*bold and enlarge some texts*/
+strong{
+    font-size:15pt;
+}
+/*set the position for the texts*/
+p{
+    margin:5px;
+}
+
+/*setup arrow button*/
+.btn_down{
+    background-image: url(../img/jiantou.png);
+    background-repeat: no-repeat;
+}
+
+.btn_up{
+    background-image: url(../img/jiantou.png);
+    background-repeat: no-repeat;
+    transform:rotate(180deg);
+}
+
+/*change the cursor to a pointer when hover over something clickable*/
+/*code refer to the website below*/
+/*https://speckyboy.com/custom-hover-click-effects-css-javascript/*/
+.home_pic_box:hover{
+    cursor:pointer;
+}
+
+.home_pic_box h2{
+    color:#ffffff;
+    text-align:center;
+    font-family:'Bebas Neue', cursive;
+    padding:10px;
+    /*transform:translateY(-100px);*/
+    opacity:0;
+    transition:all 0.2s ease-in-out;
+    margin-bottom: 0;
+}
+
+.home_pic_box img{
+    transition: all 0.2s linear;
+}
+.home_pic_box .mask{
+    width:80%;
+    position:absolute;
+    overflow:hidden;
+    top:30%;
+    left:10%;
+    opacity:0;
+    /*background-color: rgba(58,1,132,0.44);*/
+    background-image: url("../img/Mask_background.png");
+    background-size: cover;
+    transition: all 0.4s ease-in-out;
+}
+
+.home_pic_box:hover img{
+    transform:scale(1.1);
+}
+
+.home_pic_box:hover .mask{
+    opacity:0.8;
+}
+
+.home_pic_box:hover h2{
+    opacity:1;
+    transform:translateY(0px);
+}
+
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(0, 10px);
+  }
+}
+
+
