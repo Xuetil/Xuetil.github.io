@@ -93,7 +93,9 @@
     background-image: url("../img/coconut_real.png");
     background-size: cover;
 }
+
 /*set title for hotpot pages*/
+/*position the title in the middle of the page*/
 #beijing_title{
     margin-left:auto;
     margin-right:auto;
@@ -136,6 +138,7 @@
 }
 
 /*set position for the information box*/
+/*position the text information in the middle*/
 .information{
     color:rgb(247,245,240);
     margin-left: auto;
@@ -149,21 +152,23 @@
     transform:translate(-50%,-50%);
 }
 
-/*bold and enlarge some texts*/
+/*bold and enlarge some texts in the information box*/
 strong{
     font-size:1.1em;
 }
-/*set the position for the texts*/
+/*set the texts in the middle of the information box*/
 p{
     margin:5px;
 }
 
 /*setup arrow button*/
+/*downward arrow*/
 .btn_down{
     background-image: url(../img/jiantou.png);
     background-repeat: no-repeat;
 }
 
+/*upward arrow*/
 .btn_up{
     background-image: url(../img/jiantou.png);
     background-repeat: no-repeat;
@@ -171,12 +176,15 @@ p{
 }
 
 /*change the cursor to a pointer when hover over something clickable*/
-/*code refer to the website below*/
-/*https://speckyboy.com/custom-hover-click-effects-css-javascript/*/
 .home_pic_box:hover{
     cursor:pointer;
 }
 
+/*hover effect over the picture of the hand-drawing hotpot*/
+/*the wanted effect is when hover, show the name of the hotpot*/
+/*code refer to the website below*/
+/*https://speckyboy.com/custom-hover-click-effects-css-javascript/*/
+/*set the transition and style for the text*/
 .home_pic_box h2{
     color:#ffffff;
     text-align:center;
@@ -188,6 +196,7 @@ p{
     margin-bottom: 0;
 }
 
+/*make the */
 .home_pic_box img{
     transition: all 0.2s linear;
 }
@@ -272,9 +281,7 @@ p{
     .info{
         background-color:rgba(255,255,255,0.8);
     }
-/*    .title img{
-        margin-top: 30px;
-    }*/
+
 }
 
 @media (min-aspect-ratio: 1/1) and (min-width: 576px) {
