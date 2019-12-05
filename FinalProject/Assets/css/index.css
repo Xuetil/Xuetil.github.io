@@ -196,16 +196,18 @@ p{
     margin-bottom: 0;
 }
 
-/*make the */
+/*make the transition of enlarging the image smoother */
 .home_pic_box img{
     transition: all 0.2s linear;
 }
+/*create a overlay mask above the hotpot images, for further use of hover */
 .home_pic_box .mask{
     width:80%;
     position:absolute;
     overflow:hidden;
     top:30%;
     left:10%;
+    /*mask is transparent when the there is no hovering*/
     opacity:0;
     /*background-color: rgba(58,1,132,0.44);*/
     background-image: url("../img/Mask_background.png");
@@ -213,20 +215,22 @@ p{
     transition: all 0.4s ease-in-out;
 }
 
+/*the hover effect: when hover, the image would be enlarged by the scale of 1.1*/
 .home_pic_box:hover img{
     transform:scale(1.1);
 }
-
+/*when hover, the overlay mask would only have the opacity of 0.8*/
 .home_pic_box:hover .mask{
     opacity:0.8;
 }
-
+/*when hover, the text on the mask would be a solid color*/
 .home_pic_box:hover h2{
     opacity:1;
     transform:translateY(0px);
 }
 
-
+/*to make the website adapt the phone size better, I coded some typical screen sizes separately*/
+/*when the screen is vertial*/
 @media (max-aspect-ratio: 1/1) {
     /*#logo{
         background-color: pink;
@@ -242,6 +246,7 @@ p{
     .first_row{
         display:none;
     }
+    /*use the image on the left of the screen as the background for the texts on the right*/
     #bj_background{
         background-image: url("../img/beijing_real.png");
         background-size:cover;
@@ -266,7 +271,7 @@ p{
         background-image: url("../img/coconut_real.png");
         background-size:cover;  
     }
-
+    /*change the color of the arrow to adapt the new background color*/
     .btn_down{
         background-image: url(../img/jiantou_color.png);
         background-repeat: no-repeat;
@@ -283,12 +288,14 @@ p{
     }
 
 }
-
+/*horizontal screen but no smaller than 576px*/
 @media (min-aspect-ratio: 1/1) and (min-width: 576px) {
     /*#logo {
         background-color: red;
     }*/
 }
+
+/*horizontal screen but no smaller than 768px*/
 @media (min-aspect-ratio: 1/1) and (min-width: 768px) {
     /*#logo{
         background-color: blue;
@@ -303,6 +310,7 @@ p{
     }
 }
 
+/*horizontal screen but no smaller than 992px*/
 @media (min-aspect-ratio: 1/1) and (min-width: 992px) {
    /* #logo{
         background-color: green;
@@ -316,7 +324,7 @@ p{
         /*background-color: green;*/
     }
 }
-
+/*horizontal screen but no smaller than 1200px*/
 @media (min-aspect-ratio: 1/1) and (min-width: 1200px) {
 /*    #logo{
         background-color: black;
@@ -331,6 +339,7 @@ p{
     }
 }
 
+/*animation for the arrow bouncing up and down*/
 @keyframes bounce {
   0%,
   100% {

@@ -1,4 +1,5 @@
 $(function () {
+    // Scrollify default setting
     $(document).ready(function(){
         $.scrollify({
             section : "section",
@@ -22,20 +23,26 @@ $(function () {
     
     main();
 
+    // call functions
     function main() {
         setupButtons();
         setupHomeMenu();
     }
 
+    // set up the arrow for anchoring
     function setupButtons(){
+        // when click the arrow, goes to the next page
         $('.btn_down').click(function(){
             $.scrollify.next();
         });
+        // when click the lask up arrow, back to the home page
         $('.btn_up').click(function(){
             $.scrollify.move("#home");
         });
     }
 
+    // set up the hotpot pics on the home menu as another form of navigation
+    // set the hotpot pics up individually to their corresponding page
     function setupHomeMenu(){
         $('#beijing_pic').click(function(){
             // console.log("function");
